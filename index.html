@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Website Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">Study<span>.</span></a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#quizzes">Quizzes</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section class="home" id="home">
+    <div class="content">
+      <h1>My Portfolio</h1>
+      <p>Welcome to my portfolio! Here, you will find my latest projects, quiz scores, and ways to get in touch with me. Feel free to explore!</p>
+      <a href="#contact" class="btn get-started">Contact Me</a>
+
+  
+      <div class="socials">
+        <a href="https://github.com/ghubie-cutie" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/loremae-paclibar" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://facebook.com/loremae.paclibar.2024?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com/itsyr_lore" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="profile-pic-container">
+        <img src="myprofile.jpg" alt="My Profile Picture">
+      </div>
+    </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <div class="resume-card">
+      <div class="resume-left">
+        <img src="myprofile.jpg" alt="My Profile Picture">
+      </div>
+      <div class="resume-right">
+        <h1>Loremae Paclibar</h1>
+        <p class="subtitle">Third-Year Information Technology Student</p>
+  
+        <div class="resume-section">
+          <h3>Objective</h3>
+          <p>
+            I am a motivated and enthusiastic third-year Information Technology student seeking opportunities to expand my knowledge and contribute to meaningful projects. I am eager to learn, grow, and apply my skills in a dynamic and professional environment.
+          </p>
+        </div>
+  
+        <div class="resume-section">
+          <h3>Education</h3>
+          <ul>
+            <li><strong>Bachelor of Science in Information Technology</strong></li>
+            <li>Cavite State University, Silang Campus</li>
+            <li>Expected Graduation: 2026</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>Contact</h3>
+          <p>Email: loremaepaclibar@gmail.com</p>
+          <p>Phone: 09475887744</p>
+          <p>Location: Silang, Cavite, Philippines</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="quizzes" id="quizzes">
+    <h2>My Quiz Scores</h2>
+    
+    <h2>PRE-TEST</h2>
+    <div class="quiz-gallery">
+      <div class="quiz-item">
+        <img src="pre-test_1.jpg" alt="Pre-Test 1" class="lightbox-trigger" data-img="pre-test_1.jpg">
+      </div>
+      <div class="quiz-item">
+        <img src="pre-test_2.jpg" alt="Pre-Test 2" class="lightbox-trigger" data-img="pre-test_2.jpg">
+      </div>
+      <div class="quiz-item">
+        <img src="pre-test_3.jpg" alt="Pre-Test 3" class="lightbox-trigger" data-img="pre-test_3.jpg">
+      </div>
+      <div class="quiz-item">
+        <img src="pre-test_4.jpg" alt="Pre-Test 4" class="lightbox-trigger" data-img="pre-test_4.jpg">
+      </div>
+      <div class="quiz-item">
+        <img src="pre-test_5.jpg" alt="Pre-Test 5" class="lightbox-trigger" data-img="pre-test_5.jpg">
+      </div>
+    </div>
+  
+    <h2>POST-TEST</h2>
+    <div class="quiz-gallery">
+      <div class="quiz-item">
+        <img src="post-test_01.jpg" alt="Post-Test 1" class="lightbox-trigger" data-img="post-test_01.jpg">
+      </div>
+      <div class="quiz-item">
+        <img src="post-test 2.jpg" alt="Post-Test 2" class="lightbox-trigger" data-img="post-test_02.jpg">
+      </div>
+      <div class="quiz-item">
+        <img src="post-test 3.jpg" alt="Post-Test 3" class="lightbox-trigger" data-img="post-test_03.jpg">
+      </div>
+      <div class="quiz-item">
+        <img src="post-test_04.jpg" alt="Post-Test 4" class="lightbox-trigger" data-img="post-test_04.jpg">
+      </div>
+      <div class="quiz-item">
+        <img src="post-test_05.jpg" alt="Post-Test 5" class="lightbox-trigger" data-img="post-test_05.jpg">
+      </div>
+    </div>
+  
+    <h2>MIDTERM EXAM</h2>
+    <div class="quiz-gallery">
+      <div class="quiz-item">
+        <img src="midterm.jpg" alt="Midterm Exam" class="lightbox-trigger" data-img="midterm.jpg">
+      </div>
+    </div>
+  
+    <h2>LONG QUIZ</h2>
+    <div class="quiz-gallery">
+      <div class="quiz-item">
+        <img src="long quiz.jpg" alt="Long Quiz" class="lightbox-trigger" data-img="long quiz.jpg">
+      </div>
+    </div>
+  
+    <h2>PROJECT SCORE</h2>
+    <div class="quiz-gallery">
+      <div class="quiz-item">
+        <img src="project_score.jpg" alt="Project Score" class="lightbox-trigger" data-img="project_score.jpg">
+      </div>
+    </div>
+  
+  </section>
+  
+
+  <div class="lightbox-overlay" id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-image" src="" alt="Full View">
+  </div>
+  
+
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-gallery">
+      <div class="project-item">
+        <h2>Project 1</h2>
+        <h3><a href="https://drive.google.com/drive/folders/1UHlOmSXY5HyCG_T7_Qh-IvAmRmes3Mr1?usp=drive_link" target="_blank">Flower Shop</a></h3>
+      </div>
+      <div class="project-item">
+        <h2>Project 2</h2>
+        <h3><a href="https://drive.google.com/drive/folders/1HIzsCob4X0fv4Hzt6nF0UOtdJJ4G4naU?usp=drive_link" target="_blank">Web Portfolio</a></h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="socials">
+      <a href="https://github.com/ghubie-cutie" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/loremae-paclibar" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/loremae.paclibar.2024?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/itsyr_lore" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p class="copyright">
+      &copy; All Rights Reserved | Loremae Paclibar
+    </p>
+  </footer>
+
+  <script>
+    const menuIcon = document.querySelector(".menu-icon");
+    const navbar = document.querySelector(".navbar");
+  
+    menuIcon.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+    const navLinks = document.querySelectorAll('.navbar a');
+    const sections = document.querySelectorAll('section');
+
+    function showSection(id) {
+      sections.forEach(section => {
+        section.style.display = section.id === id ? 'block' : 'none';
+      });
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        showSection(targetId);
+      });
+    });
+    const getStartedBtn = document.querySelector('.get-started');
+  getStartedBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    showSection('contact');
+  });
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.querySelector('.lightbox-image');
+const lightboxClose = document.querySelector('.lightbox-close');
+
+document.querySelectorAll('.lightbox-trigger').forEach(img => {
+  img.addEventListener('click', () => {
+    lightboxImage.src = img.dataset.img;
+    lightbox.style.display = 'flex';
+  });
+});
+
+lightboxClose.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = 'none';
+  }
+});
+
+  </script>
+
+</body>
+</html>
